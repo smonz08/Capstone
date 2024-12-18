@@ -44,3 +44,6 @@ TagManager:
   - name: House Details
     uniqueID: 3661971343
     locked: 0
+  - name: BaseCharacter
+    uniqueID: 2657637619
+    locked: 0
