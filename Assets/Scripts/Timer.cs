@@ -9,7 +9,11 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
+    [SerializeField] PointHUD pointHUD;
     public GameObject pauseMenu;
+    public GameObject winnerMenu;
+    public GameObject loserMenu;
+    public int winningPoints;
 
     // Update is called once per frame
     void Update()
@@ -19,7 +23,12 @@ public class Timer : MonoBehaviour
         }
         else if (remainingTime < 0) {
             remainingTime = 0;
-            // SceneManager.LoadScene(0);
+            if (pointHUD.Points >= winningPoints){
+                UnlockNewLevel();    
+                winnerMenu.SetActive(true);
+            } else if (pointHUD.Points < winningPoints){
+                loserMenu.SetActive(true);
+            }
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
@@ -37,4 +46,14 @@ public class Timer : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
+
+    void UnlockNewLevel() // Run this function if enought points earned by end of level
+	{
+		if(SceneManager.GetActiveScene().buildIndex>=PlayerPrefs.GetInt("ReachedIndex"))
+		{
+			PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+			PlayerPrefs.SetInt("UnockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+			PlayerPrefs.Save();
+		}
+	}
 }

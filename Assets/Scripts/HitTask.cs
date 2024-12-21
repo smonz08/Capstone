@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Collider : MonoBehaviour
+public class HitTask : MonoBehaviour
 {
-	private void onTriggerEnter2D(Collider2D collision)
+	[SerializeField] PointHUD pointHUD;
+
+	void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.CompareTag("Player"))
+		if (collision.gameObject.tag == "Player")
 		{
-			// SceneController.instance.NextLevel();
+			pointHUD.Points += 10;
+			gameObject.SetActive(false);
 		}
 	}
 }
