@@ -6,6 +6,7 @@ public class BasicMovement : MonoBehaviour
 {
     public Animator animator;
     public float speed = 1;
+    public AudioSource PlayerAudioSource;
 
     // Update is called once per frame
 
@@ -18,5 +19,20 @@ public class BasicMovement : MonoBehaviour
         animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
         Vector3 vertical = new Vector3(0.0f, Input.GetAxis("Vertical"), 0.0f);
         transform.position = transform.position + vertical * speed * Time.deltaTime;
+    
+        if (vertical.y !=0 || horizontal.x !=0)
+        {
+            if (!PlayerAudioSource.isPlaying)
+            {
+                PlayerAudioSource.Play();
+            }
+            else
+            {
+                // Always stop the audio if the player is not inputting movement.
+                PlayerAudioSource.Stop();
+            }
+        }
+    
     }
+
 }

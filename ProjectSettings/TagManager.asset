@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Lights
   - Water
   - UI
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: BaseCharacter
     uniqueID: 2657637619
+    locked: 0
+  - name: Lights
+    uniqueID: 2679542595
     locked: 0
