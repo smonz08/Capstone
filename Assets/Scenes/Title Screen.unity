@@ -1254,11 +1254,14 @@ MonoBehaviour:
 
     Hit Play to select level.
 
-    When lights or water faucets
-    turn on or refrigerators open, run to the object to earn points.
+    When lights, water faucets,
+    or showers turn on; run to the object to earn points.
 
-    Fill up
-    the progress bar before the timer runs out in order to pass the level.'
+    If you take too long
+    to turn off the items you will lose points.
+
+    Fill up the progress bar before
+    the timer runs out in order to pass the level.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1830,8 +1833,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -19.974792}
+  m_SizeDelta: {x: 0, y: 39.9496}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844935094
 MonoBehaviour:
@@ -2290,7 +2293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263.5, y: -249.77}
+  m_AnchoredPosition: {x: 0, y: -249.77}
   m_SizeDelta: {x: 391.2469, y: 23.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1218484862
