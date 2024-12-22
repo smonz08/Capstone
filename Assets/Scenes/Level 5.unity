@@ -8163,7 +8163,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  triggerInitially: 0
+  triggerInitially: 1
 --- !u!114 &437106321
 MonoBehaviour:
   m_ObjectHideFlags: 0
