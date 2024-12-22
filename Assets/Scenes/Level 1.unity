@@ -8050,8 +8050,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
-  maxInterval: 30
+  minInterval: 19
+  maxInterval: 19
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8114,8 +8114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
-  maxInterval: 30
+  minInterval: 25
+  maxInterval: 25
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8163,7 +8163,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  triggerInitially: 0
+  triggerInitially: 1
 --- !u!114 &437106321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8242,8 +8242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
-  maxInterval: 30
+  minInterval: 15
+  maxInterval: 20
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8275,7 +8275,7 @@ MonoBehaviour:
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
   minInterval: 5
-  maxInterval: 20
+  maxInterval: 15
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8291,7 +8291,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  triggerInitially: 0
+  triggerInitially: 1
 --- !u!114 &437106325
 MonoBehaviour:
   m_ObjectHideFlags: 0
