@@ -7,16 +7,19 @@ using UnityEngine.UI;
 public class SetObjectActive : MonoBehaviour
 {
     [SerializeField] PointHUD pointHUD;
+    public GameObject winnerMenu;
+    public GameObject loserMenu;
+    public float waitTime = 10f;
 
     public void ActivateObject()
     {
         gameObject.SetActive(true);
-        Invoke("DeActivateObject", 10f);
+        Invoke("DeActivateObject", waitTime);
     }
 
     public void DeActivateObject()
     {
-        if (gameObject.activeInHierarchy==true)
+        if (gameObject.activeInHierarchy==true && !winnerMenu.activeSelf && !loserMenu.activeSelf)
         {
             // gameObject.SetActive(false);
             pointHUD.Points -= 5;

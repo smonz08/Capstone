@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
+
 
 public class RandomTimedEvent : MonoBehaviour
-{
-    [SerializeField] float runTime;    
+{ 
+    public GameObject winnerMenu;
+    public GameObject loserMenu;
+
 
     [Header("Time Intervals")]
     [Tooltip("Minimum time in seconds")]
@@ -31,7 +35,7 @@ public class RandomTimedEvent : MonoBehaviour
 
     private void TriggerEvent()
     {
-        if (Time.time < runTime){
+        if (!winnerMenu.activeSelf && !loserMenu.activeSelf){
         // Your event or code to trigger goes here
         RandomTimedEvent_Event.Invoke();
         } else {}

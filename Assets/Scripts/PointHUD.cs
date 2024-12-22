@@ -6,7 +6,7 @@ using TMPro;
 
 public class PointHUD : MonoBehaviour
 {
-	[SerializeField] TextMeshProUGUI pointText;	
+	[SerializeField] TextMeshProUGUI pointText;
 	public int maximum;
 	int points = 0;
 

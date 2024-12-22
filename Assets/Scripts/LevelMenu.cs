@@ -4,14 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelsMenu : MonoBehaviour
+public class LevelMenu : MonoBehaviour
 {
 	public Button[] buttons;
 	public GameObject levelButtons;
 
 	private void Awake()
 	{
-		// ButtonsToArray();
 		int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
 		for (int i=0; i < buttons.Length; i++)
 		{
@@ -27,15 +26,5 @@ public class LevelsMenu : MonoBehaviour
 	{
 		string levelName = "Level " + levelId;
 		SceneManager.LoadScene(levelName);
-	}
-
-	void ButtonsToArray()
-	{
-		int childCount = levelButtons.transform.childCount;
-		buttons = new Button[childCount];
-		for (int i = 0; i < childCount; i++)
-		{
-			buttons[i] = levelButtons.transform.GetChild(i).gameObject.GetComponent<Button>();
-		}
 	}
 }
