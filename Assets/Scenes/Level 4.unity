@@ -8115,7 +8115,7 @@ MonoBehaviour:
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
   minInterval: 10
-  maxInterval: 30
+  maxInterval: 20
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8243,7 +8243,7 @@ MonoBehaviour:
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
   minInterval: 10
-  maxInterval: 40
+  maxInterval: 15
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -15446,7 +15446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268.23254, y: -199.6}
+  m_AnchoredPosition: {x: -268.23254, y: -190}
   m_SizeDelta: {x: 239.9896, y: 33.2759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563809391
