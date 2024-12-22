@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class RandomTimedEvent : MonoBehaviour
 {
+    [SerializeField] float runTime;    
+
     [Header("Time Intervals")]
     [Tooltip("Minimum time in seconds")]
     public float minInterval = 5f;
@@ -19,7 +21,7 @@ public class RandomTimedEvent : MonoBehaviour
     public bool triggerInitially = true;
 
     private void Start()
-    {
+    {   
         if (triggerInitially)
             TriggerEvent(); // Trigger the event initially if enabled
 
@@ -29,7 +31,9 @@ public class RandomTimedEvent : MonoBehaviour
 
     private void TriggerEvent()
     {
+        if (Time.time < runTime){
         // Your event or code to trigger goes here
         RandomTimedEvent_Event.Invoke();
+        } else {}
     }
 }
