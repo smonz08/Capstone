@@ -2381,7 +2381,7 @@ GameObject:
   - component: {fileID: 201843238}
   - component: {fileID: 201843236}
   m_Layer: 5
-  m_Name: Level 2
+  m_Name: Level 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2438,7 +2438,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6915,7 +6915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointHUD: {fileID: 232084342}
-  maximum: 100
+  maximum: 130
 --- !u!114 &232084342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8050,7 +8050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
+  minInterval: 5
   maxInterval: 30
   RandomTimedEvent_Event:
     m_PersistentCalls:
@@ -8075,7 +8075,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437106314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15bde9228d4de194e8b7ef4b8d02d1bb, type: 3}
   m_Name: 
@@ -8083,7 +8083,7 @@ MonoBehaviour:
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
   minInterval: 15
-  maxInterval: 30
+  maxInterval: 40
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8114,7 +8114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
+  minInterval: 10
   maxInterval: 30
   RandomTimedEvent_Event:
     m_PersistentCalls:
@@ -8178,8 +8178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 15
-  maxInterval: 30
+  minInterval: 20
+  maxInterval: 40
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8203,15 +8203,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437106314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15bde9228d4de194e8b7ef4b8d02d1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 15
-  maxInterval: 30
+  minInterval: 20
+  maxInterval: 40
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8242,8 +8242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
-  maxInterval: 30
+  minInterval: 10
+  maxInterval: 40
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8274,7 +8274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 5
+  minInterval: 10
   maxInterval: 20
   RandomTimedEvent_Event:
     m_PersistentCalls:
@@ -8299,14 +8299,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437106314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15bde9228d4de194e8b7ef4b8d02d1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 15
+  minInterval: 5
   maxInterval: 30
   RandomTimedEvent_Event:
     m_PersistentCalls:
@@ -8331,15 +8331,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437106314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15bde9228d4de194e8b7ef4b8d02d1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 30
-  maxInterval: 60
+  minInterval: 10
+  maxInterval: 30
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8363,15 +8363,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437106314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15bde9228d4de194e8b7ef4b8d02d1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 10
-  maxInterval: 30
+  minInterval: 20
+  maxInterval: 40
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8402,8 +8402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
-  maxInterval: 30
+  minInterval: 30
+  maxInterval: 60
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8427,15 +8427,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437106314}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15bde9228d4de194e8b7ef4b8d02d1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  minInterval: 20
-  maxInterval: 30
+  minInterval: 30
+  maxInterval: 60
   RandomTimedEvent_Event:
     m_PersistentCalls:
       m_Calls:
@@ -8509,8 +8509,8 @@ MonoBehaviour:
   pauseMenu: {fileID: 1553331562}
   winnerMenu: {fileID: 634124363860514041}
   loserMenu: {fileID: 8584355666585019311}
-  winningPoints: 100
-  levelToUnlock: 1
+  winningPoints: 130
+  levelToUnlock: 4
 --- !u!114 &451972802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9564,7 +9564,7 @@ GameObject:
   - component: {fileID: 612853667}
   - component: {fileID: 612853666}
   m_Layer: 5
-  m_Name: Level 1
+  m_Name: Level 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9609,7 +9609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -10208,7 +10208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /100
+  m_text: /130
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -11364,7 +11364,7 @@ GameObject:
   - component: {fileID: 891267690}
   - component: {fileID: 891267689}
   m_Layer: 5
-  m_Name: Level 1
+  m_Name: Level 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11409,7 +11409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -12875,7 +12875,7 @@ GameObject:
   - component: {fileID: 1161629680}
   - component: {fileID: 1161629679}
   m_Layer: 5
-  m_Name: Level 1
+  m_Name: Level 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12952,7 +12952,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13736,8 +13736,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6724, y: 3.1296}
-  m_SizeDelta: {x: 340.9441, y: 223.5899}
+  m_AnchoredPosition: {x: 4.0117, y: 4.7163}
+  m_SizeDelta: {x: 346.0406, y: 226.7633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1349425380
 GameObject:
@@ -15501,7 +15501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointHUD: {fileID: 232084342}
   minimum: 0
-  maximum: 100
+  maximum: 130
   mask: {fileID: 755400979}
 --- !u!1 &1596812153
 GameObject:
@@ -19716,7 +19716,7 @@ GameObject:
   - component: {fileID: 1906930425}
   - component: {fileID: 1906930424}
   m_Layer: 5
-  m_Name: Level 2
+  m_Name: Level 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19761,7 +19761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -22128,7 +22128,7 @@ GameObject:
   - component: {fileID: 7995695423259985563}
   - component: {fileID: 7995695423259985562}
   m_Layer: 5
-  m_Name: Winner Panel 1
+  m_Name: Winner Panel 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22216,7 +22216,7 @@ GameObject:
   - component: {fileID: 8584355666585019315}
   - component: {fileID: 8584355666585019314}
   m_Layer: 5
-  m_Name: Loser Panel 1
+  m_Name: Loser Panel 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

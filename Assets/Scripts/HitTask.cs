@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class HitTask : MonoBehaviour
 {
 	[SerializeField] PointHUD pointHUD;
+	public int taskPoints;
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			pointHUD.Points += 10;
+			pointHUD.Points += taskPoints;
 			gameObject.SetActive(false);
 		}
 	}

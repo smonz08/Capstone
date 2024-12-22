@@ -14,6 +14,8 @@ public class Timer : MonoBehaviour
     public GameObject winnerMenu;
     public GameObject loserMenu;
     public int winningPoints;
+    public int levelToUnlock;
+    int numberOfUnlockedLevels;
 
     // Update is called once per frame
     void Update()
@@ -24,7 +26,10 @@ public class Timer : MonoBehaviour
         else if (remainingTime < 0) {
             remainingTime = 0;
             if (pointHUD.Points >= winningPoints){
-                UnlockNewLevel();    
+                numberOfUnlockedLevels = PlayerPrefs.GetInt("UnlockedLevel");  
+                if (numberOfUnlockedLevels <= levelToUnlock){
+                    PlayerPrefs.SetInt("UnlockedLevel", numberOfUnlockedLevels+1);
+                }
                 winnerMenu.SetActive(true);
             } else if (pointHUD.Points < winningPoints){
                 loserMenu.SetActive(true);
@@ -47,13 +52,13 @@ public class Timer : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    void UnlockNewLevel() // Run this function if enought points earned by end of level
-	{
-		if(SceneManager.GetActiveScene().buildIndex>=PlayerPrefs.GetInt("ReachedIndex"))
-		{
-			PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
-			PlayerPrefs.SetInt("UnockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
-			PlayerPrefs.Save();
-		}
-	}
+    //void UnlockNewLevel() // Run this function if enought points earned by end of level
+	//{
+	//	if(SceneManager.GetActiveScene().buildIndex>=PlayerPrefs.GetInt("ReachedIndex"))
+	//	{
+	//		PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+	//		PlayerPrefs.SetInt("UnockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+	//		PlayerPrefs.Save();
+	//	}
+	//}
 }
